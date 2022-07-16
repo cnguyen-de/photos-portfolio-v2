@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Index from '@/pages/Index.vue'
+import GalleryPage from '@/pages/GalleryPage.vue'
 
 const routes = [
   {
@@ -8,6 +9,13 @@ const routes = [
     component: Index,
     meta: {
       title: 'Vite + Vue + TypeScript + Tailwind Starter Template',
+    },
+  },
+  {
+    path: '/gallery',
+    component: GalleryPage,
+    meta: {
+      title: 'Gallery',
     },
   },
 ]
